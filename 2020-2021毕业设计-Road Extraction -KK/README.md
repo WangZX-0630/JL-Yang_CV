@@ -80,9 +80,9 @@ CUDA_VISIBLE_DEVICES=0,1 python train_mtl.py --config config.json --dataset deep
 ```
 
 __Testing MTL Help__
-```
+
 file:    test.py   similar usage with training but remember to add --resume (path of model)
-```
+
 
 ## Evaluate APLS
 
@@ -109,9 +109,9 @@ usage(finetune): CUDA_VISIBLE_DEVICES=0,1 python train_refine_pre.py --config co
 ```
 
 * Test
-```
+
 file:    test_refine_pre.py
-```
+
 
 
 ## Notice
