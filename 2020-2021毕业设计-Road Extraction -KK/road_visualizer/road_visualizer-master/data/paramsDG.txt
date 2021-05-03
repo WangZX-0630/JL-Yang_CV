@@ -1,0 +1,7 @@
+solution = ./data/103201_mask_pred.csv
+
+truth = ./data/103201_mask_gt.csv
+
+image-dir = C:\Users\kangk\Desktop\road_visualizer-master\road_visualizer-master\data\DeepGlobe_Roads_Sample
+
+band-triplets = ./data/band-triplets.txt
