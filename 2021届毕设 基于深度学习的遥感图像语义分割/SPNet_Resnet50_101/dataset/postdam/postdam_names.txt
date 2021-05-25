@@ -1,0 +1,6 @@
+surface
+building
+low vegetation
+tree
+car
+background
