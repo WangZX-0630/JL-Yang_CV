@@ -8,6 +8,8 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 # Modified by Bowen Cheng from https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation/blob/main/mmseg/models/backbones/swin_transformer.py
 
+#MaskFormer有U-net结构，编码器forword需要返回一个outs字典（含有4个stage的特征图）
+
 import numpy as np
 import torch
 import torch.nn as nn
