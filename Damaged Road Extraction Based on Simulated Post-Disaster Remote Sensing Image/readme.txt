@@ -1,6 +1,23 @@
 Before you run the program, install the modules first by command:
 pip install -r requirements.txt
 
+weights files should be downloaded:
+File Name: latest_net_Corr.pth  
+Linkage: https://pan.baidu.com/s/10GFEzqN7EK1D7jzVQuU9tA   
+Password: stdz   
+Path:Damaged Road Extraction Based on Simulated Post-Disaster Remote Sensing Image/checkpoints/ade20k/latest_net_Corr.pth
+
+File Name: latest_net_G.pth  
+Linkage: https://pan.baidu.com/s/1_cSbzNC8Qacyyaqe1sErmA   
+Password: 4j3w   
+Path:Damaged Road Extraction Based on Simulated Post-Disaster Remote Sensing Image/checkpoints/ade20k/latest_net_G.pth
+
+File Name: log02_dink34.th  
+Linkage: https://pan.baidu.com/s/1RcUKWttbnT0peD_j6SfC8Q   
+Password: 8u2t   
+Path:Damaged Road Extraction Based on Simulated Post-Disaster Remote Sensing Image/weights/log02_dink34.th
+
+
 Then make sure the following paths have no file:
 imgs/ade20k/validation
 imgs/ade20k/erased
