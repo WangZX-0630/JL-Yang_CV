@@ -1,12 +1,7 @@
 # --------------------------------------------------------
-# Swin Transformer
-# Copyright (c) 2021 Microsoft
-# Licensed under The MIT License [see LICENSE for details]
-# Written by Ze Liu, Yutong Lin, Yixuan Wei
+#encode-decode module of CADA_Maskformer
 # --------------------------------------------------------
 
-# Copyright (c) Facebook, Inc. and its affiliates.
-# Modified by Bowen Cheng from https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation/blob/main/mmseg/models/backbones/swin_transformer.py
 
 import numpy as np
 import torch
@@ -477,19 +472,6 @@ class CSWinTransformer(nn.Module):
         
         self.apply(self._init_weights)
         
-#         resnet = models.resnet34(pretrained=False)
-#         resnet.load_state_dict(torch.load('resnet34-333f7ec4.pth'))
-#         self.firstconv = resnet.conv1
-#         self.firstbn = resnet.bn1
-#         self.firstrelu = resnet.relu
-#         self.firstmaxpool = resnet.maxpool
-#         self.encoder1 = resnet.layer1
-#         self.encoder2 = resnet.layer2
-#         self.encoder3 = resnet.layer3
-#         self.encoder4 = resnet.layer4
-#         self.gamma0 = Parameter(torch.zeros(1))
-#         self.gamma1 = Parameter(torch.zeros(1))
-#         self.gamma2 = Parameter(torch.zeros(1))
     def _init_weights(self, m):
         if isinstance(m, nn.Linear):
             trunc_normal_(m.weight, std=.02)
@@ -568,9 +550,7 @@ class CSWinTransformer(nn.Module):
         outs["res{}".format(1 + 2)] = outs["res{}".format(1 + 2)] + self.lu2(outs["res{}".format(3 + 2)])
         outs["res{}".format(0 + 2)] = outs["res{}".format(0 + 2)] + self.lu1(outs["res{}".format(2 + 2)])
         outs["res{}".format(0 + 2)] = outs["res{}".format(0 + 2)] + self.conv_forU(F.interpolate(outs["res{}".format(1 + 2)], scale_factor=2, mode='bilinear'))
-        # [self.img_size//4,self.img_size//4],
-        #x = self.norm(x)
-        # return torch.mean(x, dim=1)
+        
         return outs
 
 
