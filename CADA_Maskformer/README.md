@@ -8,4 +8,4 @@ Architecture
 
 Acknowledgements
 ====
-This repository is built using the mmsegmentation library, the MaskFormer repository and the CSWin-Transformer repository.
+This repository is built using the [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) library, the [MaskFormer](https://github.com/facebookresearch/MaskFormer) repository and the [CSWin-Transformer](https://github.com/microsoft/CSWin-Transformer) repository.
