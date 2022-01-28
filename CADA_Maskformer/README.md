@@ -4,7 +4,7 @@ Code of paper "MaskFormer with improved encoder-decoder module for Semantic Segm
 
 Architecture
 -------
-![architecture_of_CADA-MaskFormer](https://github.com/lqwrl542293/JL-Yang_CV/blob/master/CADA_Maskformer/architecture_of_CADA-MaskFormer.png)
+![architecture_of_CADA-MaskFormer](./architecture_of_CADA-MaskFormer.png)
 
 Acknowledgements
 ====
